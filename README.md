@@ -4,3 +4,5 @@
 # 4.[Set & Dict](./content/set_dict.md)
 # 5.[Thao tác với file](./content/thao_tac_voi_file.md)
 # 6.[Nhập xuất](./content/nhap_xuat.md)
+# 7.[Cấu truc rẽ nhánh](./content/cau_truc_re_nhanh.md)
+# 8.[Vòng lặp](./content/vong_lap.md)
