@@ -6,3 +6,7 @@
 # 6.[Nhập xuất](./content/nhap_xuat.md)
 # 7.[Cấu truc rẽ nhánh](./content/cau_truc_re_nhanh.md)
 # 8.[Vòng lặp](./content/vong_lap.md)
+# 9.[Hàm](./content/ham.md)
+# 10.[Module & Package](./content/module_pakage.md)
+# 11.[Exception](./content/exception.md)
+# 12.[OOP](./content/oop.md)
