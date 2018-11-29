@@ -134,16 +134,16 @@ Sinhvien.__dict__: {'__module__': '__main__', 'displayCount':
 ## 12.6 Một số phương thức mặc định
 |Phương thức|chức năng|Lời gọi mẫu|
 |-----------|---------|-----------|
-|__init__( self [,args...]|Là constructor (với bất kỳ tham số tùy ý nào)|obj = tenLop(args)|
-|__del__( self )|Là destructor, xóa một đối tượng| del obj|
-|__repr__( self )| Biểu diễn chuỗi hiển thị khi gọi đối tượng(<Sinhvien: chuoigido>)|repr(obj)|
-|__str__( self )| Biểu diễn chuỗi sau khi convert đối tượng sang string|str(obj)|
-|__cmp__ ( self, x )|So sánh đối tượng|cmp(obj, x)|
+|`__init__`( self [,args...]|Là constructor (với bất kỳ tham số tùy ý nào)|obj = tenLop(args)|
+|`__del__`( self )|Là destructor, xóa một đối tượng| del obj|
+|`__repr__`( self )| Biểu diễn chuỗi hiển thị khi gọi đối tượng(<Sinhvien: chuoigido>)|repr(obj)|
+|`__str__`( self )| Biểu diễn chuỗi sau khi convert đối tượng sang string|str(obj)|
+|`__cmp__`( self, x )|So sánh đối tượng|cmp(obj, x)|
 
 ## 12.7 Một số toán tử
 |Phương thức|chức năng|Toán tử|
 |-----------|---------|-------|
-|__add__( self, other) |Cộng hai đối tượng| + |
-|__sub__( self, other)|Trừ hai đối tượng| - |
-|__mul__( self, other )| Nhân hai đối tượng|x|
-|__div__( self )| Chia đối tượng sang string|:|
+|`__add__`( self, other) |Cộng hai đối tượng| + |
+|`__sub__`( self, other)|Trừ hai đối tượng| - |
+|`__mul__`( self, other )| Nhân hai đối tượng|x|
+|`__div__`( self )| Chia đối tượng sang string|:|
