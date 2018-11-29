@@ -20,15 +20,66 @@ class Cha:
 * ttc1,ttc2 là các thuộc tính của class,và tất cả các đối tượng thuộc class sẽ có chung thuộc tính này ,khi ta thay đổi thuộc tính chung của một đối tượng thì thuộc tính chung của tất cả các đối tượng khác cũng thay đổi theo.
 * tt1,tt2 cũng là các thuộc tính của class, mỗi một đối tượng sẽ có các thuộc tính tt1,tt2 là khác nhau.
 * ptCha là phương thức của class
+```
+cha1 = Cha(11,111)
+cha2 = Cha(22,222)
+------------------
+cha1.ttc
+>> Chung
+cha2.ttc
+>> Chung
+
+cha1.tt1
+>> 11
+cha2.tt1
+>> 22
+```
 ## 12.2 Kế thừa
-python hỗ trợ đa kế thừa 
 ```
 class Con1(Cha):
   def ptCon1():
-    print('phuon thuc con')
+    print('phuong thuc con')
 ```
-* lớp Con1 kế thừa lớp Cha cả thuộc tính và phương thức 
-* định nghiã một phương thức mới ptCon1
+python hỗ trợ đa kế thừa 
+```
+class ConNgua:
+    chan = 'Dai'
+    bay = True
+
+    def __init__(self, gioi_tinh='Duc'):
+        self.gioi_tinh = gioi_tinh
+       
+    def chay(self):
+        print('Nhanh')
+
+
+class ConLua:
+    chan = 'Ngan'
+    boi = True
+
+    def __init__(self, gioi_tinh='Cai'):
+        self.gioi_tinh = gioi_tinh
+    
+    def chay(self):
+        print('Cham')
+
+class ConLa(ConNgua, ConLua):
+    pass
+----------------------------------------
+la1 = ConLa()
+la1.chan
+>> Dai
+la1.gioi_tinh
+>> Duc
+la1.bay
+>> True
+la1.boi
+>> True
+la1.chay()
+>> Nhanh
+```
+* Lớp con sẽ kế thừa tất cả các thuộc tính và phương thức của các lớp cha. Mặc định nếu các phương thức và thuộc tính của các lớp cha trùng nhau thì lớp con sẽ kế thừa của lớp cha nào khai báo trước trong trường hợp trên là ConNgua
+
 ## 12.3 Ghi đè
 ```
 class Con2(Cha):
