@@ -10,3 +10,5 @@
 # 10.[Module & Package](./docs/module_pakage.md)
 # 11.[Exception](./docs/exception.md)
 # 12.[OOP](./docs/oop.md)
+# 13.[Decorator](./docs/decorator.md)
+# 14.[Regular Expression](./docs/regex.md)
