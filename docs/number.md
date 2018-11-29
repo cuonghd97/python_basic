@@ -10,6 +10,7 @@ Python có 3 kiểu dữ liệu số cơ bản đó là:
 - Kiểu float: số thực với dấu thập phân. Kiểu này cũng có thể được viết ở dạng số mũ của 10 với E hoặc e như (2.5e2 = 2.5 x 102 = 250).
 
 Một số hàm toán học cơ bản trong module Math:
+
 |Hàm| Chức năng|
 |---|----------|
 |abs(x)|Trị tuyệt đối của x|
@@ -24,6 +25,7 @@ Một số hàm toán học cơ bản trong module Math:
 |sqrt(x)|Trả về căn bậc hai của x, với x > 0|
 
 Một số hàm xử lý random
+
 |Hàm| Chức năng|
 |---|----------|
 |choice(seq)|Một item ngẫu nhiên trong một list, tuple, hoặc một string|
