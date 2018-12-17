@@ -140,3 +140,10 @@ def show_detail_2(name, **kwargs):
 >>show_detail_2(name='Coulson', age='40', level='A')
 #Chạy Ok
 ```
+
+#### 4) Get size off screen window
+```
+from win32api import GetSystemMetrics
+print("Width =", GetSystemMetrics(0))
+print("Height =", GetSystemMetrics(1))
+```
