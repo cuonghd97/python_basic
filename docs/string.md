@@ -3,12 +3,12 @@ String là một trong các kiểu phổ biến nhất trong Python. String tron
 Python không hỗ trợ một kiểu chữ cái; chúng được coi như các chuỗi có độ dài là 1.
 Trong Python, String được lưu giữ dưới dạng các ký tự đơn trong vị trí ô nhớ liên tiếp nhau. 
 ## Khai báo
-Sử dụng ' ' or " " or ''' ''' để khai báo chuỗi
+Sử dụng ' ' or " " or ''' ''' or """ """ để khai báo chuỗi
 ```
 #' ' và " " để khai báo chuỗi bình thường
 'Sinionth'
 "Hello wolrd !"
-#''' ''' để khai báo chuỗi nhiều dòng
+#''' ''' và """ """ để khai báo chuỗi nhiều dòng
 '''File
 Edit
 Search
@@ -17,6 +17,8 @@ Encoding
 Language
 '''
 ```
+*chú ý: Trong python 2.x string chứa ký tự ANCII còn python 3.x là unicode, muốn khai báo unicode ở python 2.x thì thêm `u` ở đầu ví dụ `u'hello'`
+
 ## Escape sequence 
 
 |Tên|Kí hiệu|Giải thích|
