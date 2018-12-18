@@ -41,23 +41,22 @@ Một số toán tử với chuỗi
 #toán tử +
 s = "si"
 s +="nionth"
-print(s)
-'''
-sinionth
-'''
+---------------------------------
+>> "sinionth"
+
 #toán tử *
 s ="abc"
 s *=2
-print(s)
-'''
-abcabc
-'''
+---------------------------------
+>> "abcabc"
+
 #toán tử in trả về True or False
 "a" in "abc"
-'''
-True
-'''
+---------------------------------
+>>True
+
 ```
+
 ## indexing và cắt chuỗi
 ```
 s = "sinionth"
