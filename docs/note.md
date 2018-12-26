@@ -147,3 +147,6 @@ from win32api import GetSystemMetrics
 print("Width =", GetSystemMetrics(0))
 print("Height =", GetSystemMetrics(1))
 ```
+
+#### 5)Command Line Arguments
+[https://www.tutorialspoint.com/python/python_command_line_arguments.htm](https://www.tutorialspoint.com/python/python_command_line_arguments.htm)
