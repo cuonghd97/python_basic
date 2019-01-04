@@ -150,3 +150,18 @@ print("Height =", GetSystemMetrics(1))
 
 #### 5)Command Line Arguments
 [https://www.tutorialspoint.com/python/python_command_line_arguments.htm](https://www.tutorialspoint.com/python/python_command_line_arguments.htm)
+
+#### 6)Comprehensive
+```
+x = 2
+y = 4
+z = 3
+n = 1
+# in ra toa do [X,Y,Z] tuong ung voi 0<= X,Y,Z <= x,y,z va X+Y+Z != n
+print([[X,Y,Z] for X in range(x+1) for Y in range(y+1) for Z in range(z+1) if((X+Y+Z)!=n)])
+```
+
+#### 7)Print exactly digit after ','
+```
+print("%.2f" %avergare)
+```
