@@ -165,3 +165,18 @@ print([[X,Y,Z] for X in range(x+1) for Y in range(y+1) for Z in range(z+1) if((X
 ```
 print("%.2f" %avergare)
 ```
+
+#### 8) Format
+```
+def print_formatted(number):
+    # your code goes here
+    width = len("{0:b}".format(number))
+    for i in range(1,number+1):
+        print ("{0:{width}d} {0:{width}o} {0:{width}X} {0:{width}b}".format(i, width=width))
+```
+
+#### 9) Alphabet char
+```
+import string
+string.ascii_lowercase
+```
