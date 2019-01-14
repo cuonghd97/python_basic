@@ -60,15 +60,16 @@ tuple là một container được sử dụng rất nhiều trong các chương
 * Một tuple là một dãy các đối tượng không thay đổi (immutable) trong Python, vì thế tuple không thể bị thay đổi. 
 * Được giới hạn bởi cặp ngoặc ( ), tất cả những gì nằm trong đó là những phần tử của Tuple.
 * Các phần tử của List được phân cách nhau ra bởi dấu phẩy (,).
-* List có khả năng chứa mọi giá trị, đối tượng trong Python. Và bao gồm chứa chính nó!
+* Tuple có khả năng chứa mọi giá trị, đối tượng trong Python. Và bao gồm chứa chính nó!
+
 Chú ý : Bất kỳ tập hợp nào gồm nhiều đối tượng, được phân biệt bởi dấu phảy, được viết mà không có các biểu tượng 
 nhận diện (chẳng hạn như dấu ngoặc vuông cho List, dấu ngoặc đơn cho Tuple, …) thì Python mặc định chúng là Tuple.
 ### Cách khởi tạo List
 ```
 #bình thường
 lst = (1,2.0,5,"sinionth")
-#sử dụng contrutor
-lst = list((1, 2, 3))
+#sử dụng constructor
+lst = tuple((1, 2, 3))
 ```
 ### Một số toán tử với Tuple
 Giống list
