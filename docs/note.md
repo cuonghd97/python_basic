@@ -179,4 +179,17 @@ def print_formatted(number):
 ```
 import string
 string.ascii_lowercase
+
+`abcdefjhijklmnnopqrstuvxyzw`
 ```
+
+#### 10) Shuffe
+```
+x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
+shuffle(x)
+
+['Flying', 'Keep', 'Blue', 'High', 'The', 'Flag']
+```
+
+#### 11) multi thread
+Đối với máy 1 core thì thread không thực sự chạy sông các thread mà chuyển đổi qua lại giữa các thread sử dụng 1 core CPU duy nhất => không làm tăng hiệu năng.
