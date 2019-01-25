@@ -1,13 +1,68 @@
-## 1.Number
+# 1.Number
 Kiểu dữ liệu Number lưu trữ các giá trị số. Chúng là các kiểu dữ liệu immutable, hay là kiểu dữ liệu không thay đổi, nghĩa là các thay đổi về giá trị của kiểu dữ liệu số này sẽ tạo ra một đối tượng được cấp phát mới.
-```
-var1 = 1
-var2 = 10
-```
+
 Python có 3 kiểu dữ liệu số cơ bản đó là:
 - Kiểu int: kiểu số nguyên không có dấu thập phân.
 - Kiểu long: là các số nguyên không giới hạn kích cỡ, được theo sau bởi một chữ l hoặc chữ L.
 - Kiểu float: số thực với dấu thập phân. Kiểu này cũng có thể được viết ở dạng số mũ của 10 với E hoặc e như (2.5e2 = 2.5 x 102 = 250).
+
+*Giá trị của các kiểu trên là không có giới hạn phụ thuộc vào phần cứng
+
+*Python còn hỗ trợ các kiểu `decimal`,`fractions`, `complex` 
+## Khai báo
+```
+var1 = 1
+var2 = 10.05
+```
+
+## Các toán tử
+```
+# toán tử + (cộng)
+5 + 6
+------------output---------------
+11
+
+# toán tử - (trừ)
+9 - 1
+------------output---------------
+8
+
+
+# toán tử * (nhân)
+3*2
+------------output---------------
+6
+
+# toán tử / (kết quả luôn là float)  
+4/2
+------------output---------------
+2.0
+
+# toán tử % (chia lấy dư)  
+5/2
+------------output---------------
+1
+
+# toán tử // (chia lấy nguyên)  
+5/2
+------------output---------------
+2
+
+# toán tử ** (lũy thừa)
+5**2
+------------output---------------
+25
+
+```
+Các toán tử `+=`, `-=`, `*=`, `/=`, `//=`, `%=`, `**=` cũng được hỗ trợ.
+```
+# toán tử += (cộng và gán)
+a = 5
+a += 6    #tương tự với a = a + 6
+------------output---------------
+11
+```
+
 
 Một số hàm toán học cơ bản trong module Math:
 

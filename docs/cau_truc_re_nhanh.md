@@ -2,7 +2,7 @@
 
 ## cú pháp
 ```
-if<điều kiện>:
+if <điều kiện>:
   <câu lệnh>
 ```
 nếu điều kiện được thỏa mãn thì câu lệnh được thực hiện

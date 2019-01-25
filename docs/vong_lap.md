@@ -49,6 +49,8 @@ for x in [1,2,3]:
 else:
    print("Het")
 ```
-## 8.3 break & continue
-### break : thoát khỏi vòng lặp nếu có khối else thì bỏ qua cả khối else
-### continue: tiếp tục vòng lặp tiếp theo
+## 8.3 break, continue & pass
+ - `break`: thoát khỏi vòng lặp (gần nhất) nếu có khối else thì bỏ qua cả khối else
+ - `continue`: tiếp tục vòng lặp tiếp theo
+ - `pass`: không làm gì cả dùng để cho phù hợp cú pháp
+ 

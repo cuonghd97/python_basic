@@ -2,12 +2,15 @@
 String là một trong các kiểu phổ biến nhất trong Python. String trong Python là immutable. 
 Python không hỗ trợ một kiểu chữ cái; chúng được coi như các chuỗi có độ dài là 1.
 Trong Python, String được lưu giữ dưới dạng các ký tự đơn trong vị trí ô nhớ liên tiếp nhau. 
+*Chú ý: python 2.x string chứa ký tự ANCII còn python 3.x là unicode, muốn khai báo unicode ở python 2.x thì thêm `u` ở đầu ví dụ `u'hello'`
+
 ## Khai báo
 Sử dụng ' ' or " " or ''' ''' or """ """ để khai báo chuỗi
 ```
 #' ' và " " để khai báo chuỗi bình thường
 'Sinionth'
 "Hello wolrd !"
+
 #''' ''' và """ """ để khai báo chuỗi nhiều dòng
 '''File
 Edit
@@ -16,8 +19,18 @@ View
 Encoding
 Language
 '''
+
+# cách viết chuỗi quá dài
+('Put several strings within parentheses '
+         'to have them joined together.')
+   # hoặc
+'Put several strings within parentheses ' \
+         'to have them joined together.'
+         
+------------output---------------------------------------------------
+Put several strings within parentheses to have them joined together.
+
 ```
-*chú ý: Trong python 2.x string chứa ký tự ANCII còn python 3.x là unicode, muốn khai báo unicode ở python 2.x thì thêm `u` ở đầu ví dụ `u'hello'`
 
 ## Escape sequence 
 
@@ -29,35 +42,40 @@ Language
 |Horizontal tab|\t|In một horizontal tab|
 |Single quote|\’|In ra kí tự ‘|
 |Double quote|\”|In ra kí tự “|
-|Blackslash| \\ |In ra kí tự \ |
+|Blackslash| \\\ |In ra kí tự \ |
 
 ## Chuỗi trần: 
 giúp sửa nhưng escape sequence không mong muốn, thực chất chuỗi trần sẽ thêm \ vào trước escape sequence. 
 ```
 r'si\nionth'
 ```
-Một số toán tử với chuỗi
+
+
+## Định dạng chuỗi
+- sử dụng toán tử `%s`,`%r`,`%d`,`%f`
 ```
-#toán tử +
-s = "si"
-s +="nionth"
----------------------------------
->> "sinionth"
-
-#toán tử *
-s ="abc"
-s *=2
----------------------------------
->> "abcabc"
-
-#toán tử in trả về True or False
-"a" in "abc"
----------------------------------
->>True
-
+"name: %s, %d years old, %.1f" % ("Sinionth", 26, 9.88)
+------------output--------------------------------------
+name:Sinionth, 26 years old, 9.9
 ```
 
-## indexing và cắt chuỗi
+- sử dụng f-string 
+```
+x = 'Sinionth'
+y = 26
+f'name:{x}, {y} years old'
+------------output--------------------------------------
+name:Sinionth, 26 years old
+```
+
+- sử dụng format()
+```
+"name:{}, {} years old".format("Sinionth", 26)
+------------output--------------------------------------
+name:Sinionth, 26 years old
+```
+
+## indexing và slicing
 ```
 s = "sinionth"
 s[2] #vị trí thứ 2 từ trái qua phải đếm từ 0
@@ -70,6 +88,60 @@ s[None:5] #Cắt từ đầu đến 4 trái qua phải
 s[2:6:2] #Cắt từ 2 đến 5 step 2
 s[6:2:-1] #Cắt ngược từ 6 về 3
 ```
+
+## thay đổi chuỗi
+Chuỗi trong python là `immutable` do đó không  thể thay đổi được
+```
+s = 'sinionth'
+s[0] = 'S'
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'str' object does not support item assignment
+```
+để thay đổi chỉ có cách là tạo chuỗi mới
+
+## Một số toán tử với chuỗi
+
+```
+# tự đông nối
+'si' 'nionth'
+------------output---------------
+"sinionth"
+
+# toán tử +
+s = "si"
+a ="nionth"
+s = s + a
+------------output---------------
+"sinionth"
+
+# toán tử +=
+s = "si"
+s +="nionth"
+------------output---------------
+"sinionth"
+
+#toán tử *
+s ="abc"
+a = 2
+s = s*a
+------------output---------------
+"abcabc"
+
+#toán tử *=
+s ="abc"
+s *2
+------------output---------------
+"abcabc"
+
+#toán tử in trả về True or False
+"a" in "abc"
+------------output---------------
+True
+```
+do chuỗi là không thay đổi được nên việc `+=`, `*=`... thực chất là tạo ra chuỗi mới và gán giá trị mới cho biến này
+
+chuỗi không hỗ chợ
 
 ## các method cơ bản
 **capitalize()**: viết hoa chữ cái đầu chuỗi 

@@ -15,8 +15,8 @@ khác và vì thế chúng được lưu trữ tại một vị trí bộ nhớ 
 lst = [1,2.0,5,"sinionth"]
 #sử dụng comprehension
 lst2 = [x for x in range(0,6)]
-#sử dụng contrutor
-lst = list([1, 2, 3])
+#sử dụng contrutor list(iterable)
+lst = list((1, 2, 3))
 ```
 ### Một số toán tử với List 
 Giống hệt chuỗi
@@ -34,7 +34,8 @@ mat = [[0,1,2],[3,4,5]]
 mat[1]# hàng 1
 mat[0][2] #hàng 0 cột 2
 ```
-### Các phương thức 
+### Một số phương thức 
+
 ```
 #count(object,start,end) : đếm số lần object xuất hiện trong list
 lst.count(2)
@@ -55,6 +56,7 @@ lst2.pop(3)
 ls1.remove(3)
 #sort(key,reverse=bool): sắp xếp list 
 ```
+*sử dụng `help(List)` để biết chi tiết
 ## 3.2 Tuple
 tuple là một container được sử dụng rất nhiều trong các chương trình Python.Một Tuple gồm các yếu tố sau:
 * Một tuple là một dãy các đối tượng không thay đổi (immutable) trong Python, vì thế tuple không thể bị thay đổi. 

@@ -1,4 +1,4 @@
-## Decorator là gì ?
+ ## Decorator là gì ?
 
 ```
   Decorator là một mẫu thiết kế (Design pattern) thường được dùng để thay đổi hành vi, chức năng của 
