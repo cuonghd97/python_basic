@@ -1,5 +1,5 @@
-# 3.List và Tuple
-## 3.1 List
+# List và Tuple
+## 1. List
 LIST là một container được sử dụng rất nhiều trong các chương trình Python.Một List gồm các yếu tố sau:
 * List trong Python là thay đổi (mutable), nghĩa là Python sẽ không tạo một List mới nếu bạn sửa đổi một phần tử trong List.
 * Được giới hạn bởi cặp ngoặc [ ], tất cả những gì nằm trong đó là những phần tử của List.
@@ -9,18 +9,19 @@ LIST là một container được sử dụng rất nhiều trong các chương 
 chú ý :List không lưu trữ các phần tử một cách trực tiếp tại chỉ mục. Sự thực là một tham chiếu được lưu trữ tại mỗi chỉ mục 
 mà tham chiếu tới đối tượng được lưu trữ ở đâu đó trong bộ nhớ. Điều này là do một số đối tượng có thể lớn hơn một số đối tượng 
 khác và vì thế chúng được lưu trữ tại một vị trí bộ nhớ khác.
-### Cách khởi tạo List
+### 1.1 Cách khởi tạo List
 ```
 #bình thường
 lst = [1,2.0,5,"sinionth"]
+
 #sử dụng comprehension
 lst2 = [x for x in range(0,6)]
+
 #sử dụng contrutor list(iterable)
 lst = list((1, 2, 3))
 ```
-### Một số toán tử với List 
-Giống hệt chuỗi
-### Thay đổi nội dung list
+
+### 1.2 Thay đổi nội dung list
 ```
 lst = [1,2.0,5,"sinionth"]
 lst[2]="con cua"
@@ -28,36 +29,107 @@ lst[2]="con cua"
 [1, 2.0, 'con cua', 'sinionth']
 '''
 ```
-### Ma trận
+
+### 1.3 Một số toán tử với List 
+Giống hệt chuỗi
+```
+# toán tử +
+a = [1,2,3,4]
+b = [5,6,7,8]
+a + b 
+------------output---------------
+[1, 2, 3, 4, 5, 6, 7, 8]
+
+# toán tử *
+a = [1,2,3,4]
+a*2 
+------------output---------------
+[1, 2, 3, 4, 1, 2, 3, 4]
+
+```
+
+### 1.3 Ma trận
 ```
 mat = [[0,1,2],[3,4,5]]
 mat[1]# hàng 1
 mat[0][2] #hàng 0 cột 2
 ```
-### Một số phương thức 
+
+### 1.4 Các phương thức 
 
 ```
-#count(object,start,end) : đếm số lần object xuất hiện trong list
-lst.count(2)
-#index(i) : tương tự lst[i]
-#copy() : copy
-lst1 = lst.copy()
-#clear() : xóa mọi phần tử
-ls1.clear()
-#append(object) và extend(iterable) : thêm phần tử vào cuối list
-#truyền 1 list vào append thì sẽ coi cả list đấy là 1 phần tử còn extend thì sẽ thêm từng phần tử 
-lst2.append(1,4)
-lst2.extend(4,5)
-#insert(x,i) thêm x vào vị trí i
-lst2.insert(5,4)
-#pop(i) lấy phần tử thứ i và xóa khỏi list
-lst2.pop(3)
-#remove(x) xóa x khỏi list
-ls1.remove(3)
-#sort(key,reverse=bool): sắp xếp list 
+ |  append(...)
+ |      L.append(object) -> None -- append object to end
+ |  
+ |  clear(...)
+ |      L.clear() -> None -- remove all items from L
+ |  
+ |  copy(...)
+ |      L.copy() -> list -- a shallow copy of L
+ |  
+ |  count(...)
+ |      L.count(value) -> integer -- return number of occurrences of value
+ |  
+ |  extend(...)
+ |      L.extend(iterable) -> None -- extend list by appending elements from the iterable
+ |  
+ |  index(...)
+ |      L.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  insert(...)
+ |      L.insert(index, object) -- insert object before index
+ |  
+ |  pop(...)
+ |      L.pop([index]) -> item -- remove and return item at index (default last).
+ |      Raises IndexError if list is empty or index is out of range.
+ |  
+ |  remove(...)
+ |      L.remove(value) -> None -- remove first occurrence of value.
+ |      Raises ValueError if the value is not present.
+ |  
+ |  reverse(...)
+ |      L.reverse() -- reverse *IN PLACE*
+ |  
+ |  sort(...)
+ |      L.sort(key=None, reverse=False) -> None -- stable sort *IN PLACE*
 ```
 *sử dụng `help(List)` để biết chi tiết
-## 3.2 Tuple
+
+### 1.5 Sử dụng như stacks
+```
+stack = [3, 4, 5]
+>>> stack.append(6)
+>>> stack.append(7)
+>>> stack
+[3, 4, 5, 6, 7]
+>>> stack.pop()
+7
+>>> stack
+[3, 4, 5, 6]
+>>> stack.pop()
+6
+>>> stack.pop()
+5
+>>> stack
+[3, 4]
+```
+
+### 1.6 Sử dụng như queues
+```
+>>> from collections import deque
+>>> queue = deque(["Eric", "John", "Michael"])
+>>> queue.append("Terry")           # Terry arrives
+>>> queue.append("Graham")          # Graham arrives
+>>> queue.popleft()                 # The first to arrive now leaves
+'Eric'
+>>> queue.popleft()                 # The second to arrive now leaves
+'John'
+>>> queue                           # Remaining queue in order of arrival
+deque(['Michael', 'Terry', 'Graham'])
+```
+
+## 2 Tuple
 tuple là một container được sử dụng rất nhiều trong các chương trình Python.Một Tuple gồm các yếu tố sau:
 * Một tuple là một dãy các đối tượng không thay đổi (immutable) trong Python, vì thế tuple không thể bị thay đổi. 
 * Được giới hạn bởi cặp ngoặc ( ), tất cả những gì nằm trong đó là những phần tử của Tuple.
@@ -69,18 +141,56 @@ nhận diện (chẳng hạn như dấu ngoặc vuông cho List, dấu ngoặc �
 ### Cách khởi tạo List
 ```
 #bình thường
-lst = (1,2.0,5,"sinionth")
-#sử dụng constructor
-lst = tuple((1, 2, 3))
+tup = (1,2.0,5,"sinionth")
+tup_2 = 1, 2, 3
+
+#sử dụng constructor tuple(iterable)
+tup_4 = tuple([1, 2, 3])
+
+
 ```
 ### Một số toán tử với Tuple
-Giống list
+Giống hệt chuỗi
+```
+# toán tử +
+a = (1,2,3,4)
+b = (5,6,7,8)
+a + b 
+------------output---------------
+(1, 2, 3, 4, 5, 6, 7, 8)
+
+# toán tử *
+a = (1,2,3,4)
+a*2 
+------------output---------------
+(1, 2, 3, 4, 1, 2, 3, 4)
+
+```
 ### Thay đổi nội dung Tuple
 Về mặt lý thuyết là không thể
+```
+a = (1,2,3,4)
+a[0] = 10
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+TypeError: 'tuple' object does not support item assignment
+```
 ### Ma trận
-Giống list
+```
+mat = ((0,1,2),(3,4,5))
+mat[1]# hàng 1
+mat[0][2] #hàng 0 cột 2
+```
 ### Các phương thức 
-Có count và index (giống list)
+chỉ có 2 phương thức
+```
+ |  count(...)
+ |      T.count(value) -> integer -- return number of occurrences of value
+ |  
+ |  index(...)
+ |      T.index(value, [start, [stop]]) -> integer -- return first index of value.
+ |      Raises ValueError if the value is not present.
+```
 
 ** THAM KHẢO
 [https://viblo.asia/p/high-performance-python-lists-and-tuples-part-ii-3P0lPMP45ox](https://viblo.asia/p/high-performance-python-lists-and-tuples-part-ii-3P0lPMP45ox)

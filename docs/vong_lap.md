@@ -54,3 +54,41 @@ else:
  - `continue`: tiếp tục vòng lặp tiếp theo
  - `pass`: không làm gì cả dùng để cho phù hợp cú pháp
  
+## 8.4 Looping technique
+- dictionary
+
+```
+knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+for k, v in knights.items():
+    print(k, v)
+
+------------output--------------------------------------
+gallahad the pure
+robin the brave
+```
+
+- get index
+```
+for i, v in enumerate(['tic', 'tac', 'toe']):
+    print(i, v)
+
+------------output--------------------------------------
+0 tic
+1 tac
+2 toe
+```
+
+- loop >2 same time
+```
+questions = ['name', 'quest', 'favorite color']
+answers = ['lancelot', 'the holy grail', 'blue']
+for q, a in zip(questions, answers):
+    print('What is your {0}?  It is {1}.'.format(q, a))
+
+------------output--------------------------------------
+What is your name?  It is lancelot.
+What is your quest?  It is the holy grail.
+What is your favorite color?  It is blue.
+```
+
+ 
