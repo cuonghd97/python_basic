@@ -120,3 +120,15 @@ shuffle(x)
 #### 11) multi thread
 Đối với máy 1 core thì thread không thực sự chạy sông các thread mà chuyển đổi qua lại giữa các thread sử dụng 1 core CPU duy nhất => không làm tăng hiệu năng.
 
+#### 12) String rpartition()
+cú pháp: `string.rpartition(separator)`
+chia string ra làm 3 phần tại `separator` xuất hiện cuối
+```
+>>>string = "ha ha 123"
+>>>string.rpartition(" ")
+
+('ha ha', ' ', '123')
+```
+
+#### 13) built-in function
+[https://docs.python.org/3/library/functions.html#getattr](https://docs.python.org/3/library/functions.html#getattr)
