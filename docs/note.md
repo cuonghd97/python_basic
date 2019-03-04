@@ -132,3 +132,6 @@ chia string ra làm 3 phần tại `separator` xuất hiện cuối
 
 #### 13) built-in function
 [https://docs.python.org/3/library/functions.html#getattr](https://docs.python.org/3/library/functions.html#getattr)
+
+#### 14) progressbar2
+[https://pypi.org/project/progressbar2/](https://pypi.org/project/progressbar2/)
