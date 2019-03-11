@@ -135,3 +135,11 @@ chia string ra làm 3 phần tại `separator` xuất hiện cuối
 
 #### 14) progressbar2
 [https://pypi.org/project/progressbar2/](https://pypi.org/project/progressbar2/)
+
+#### 15) celery result
+```
+from celery.result import AsyncResult
+
+rel = AsyncResult('task_id')
+```
+
