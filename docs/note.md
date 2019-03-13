@@ -111,6 +111,7 @@ string.ascii_lowercase
 
 #### 10) Shuffe
 ```
+from random import shuffle
 x = ['Keep', 'The', 'Blue', 'Flag', 'Flying', 'High']
 shuffle(x)
 
